@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>منابع کارگاه هوش مصنوعی در گردشگری</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7ff, #eef3ff);
+    color: #202124;
+    min-height: 100vh;
+}
+
+/* HEADER */
+
+.header {
+    text-align: center;
+    padding: 45px 20px 25px;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    border-radius: 22px;
+    background: linear-gradient(135deg, #4285f4, #7b61ff);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    box-shadow: 0 10px 30px rgba(66,133,244,.25);
+}
+
+h1 {
+    margin: 20px 0 8px;
+    font-size: 28px;
+}
+
+.subtitle {
+    color: #5f6368;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.teacher {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* CONTAINER */
+
+.container {
+    width: min(720px, calc(100% - 30px));
+    margin: 20px auto 50px;
+}
+
+/* CARDS */
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    background: white;
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    border-radius: 18px;
+
+    text-decoration: none;
+
+    color: #202124;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.07);
+
+    border: 1px solid rgba(0,0,0,.04);
+
+    transition:
+        transform .2s,
+        box-shadow .2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.12);
+}
+
+.icon {
+    min-width: 60px;
+    height: 60px;
+
+    border-radius: 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 29px;
+
+    background: #f1f5ff;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.card-description {
+    color: #6b7280;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.arrow {
+    font-size: 23px;
+    color: #9aa0a6;
+}
+
+/* COLORS */
+
+.canvas .icon {
+    background: #e8f0fe;
+}
+
+.prompts .icon {
+    background: #fff4d6;
+}
+
+.question .icon {
+    background: #e8f5e9;
+}
+
+.survey .icon {
+    background: #fce8e6;
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 2;
+
+    padding: 20px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px) {
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .icon {
+        min-width: 52px;
+        height: 52px;
+        font-size: 25px;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+
+<div class="header">
+
+    <div class="logo">
+        AI
+    </div>
+
+    <h1>
+        منابع کارگاه هوش مصنوعی
+    </h1>
+
+    <div class="subtitle">
+
+        هوش مصنوعی در صنعت توریسم و گردشگری
+
+        <br>
+
+        دسترسی سریع به منابع و ابزارهای کارگاه
+
+    </div>
+
+    <div class="teacher">
+
+        مدرس: دکتر عرفان کتابچیان
+
+    </div>
+
+</div>
+
+
+
+<!-- CONTENT -->
+
+<div class="container">
+
+
+    <!-- AI CANVAS -->
+
+    <a
+        class="card canvas"
+        href="files/ai-canvas.html"
+    >
+
+        <div class="icon">
+            📋
+        </div>
+
+        <div class="card-content">
+
+            <div class="card-title">
+                بوم کاربرد AI
+            </div>
+
+            <div class="card-description">
+
+                شناسایی مسئله واقعی کسب‌وکار
+                و تبدیل آن به یک کاربرد قابل اجرای هوش مصنوعی.
+
+            </div>
+
+        </div>
+
+        <div class="arrow">
+            ←
+        </div>
+
+    </a>
+
+
+
+    <!-- PROMPTS -->
+
+    <a
+        class="card prompts"
+        href="files/prompts.html"
+    >
+
+        <div class="icon">
+            💡
+        </div>
+
+        <div class="card-content">
+
+            <div class="card-title">
+                نمونه پرامپت‌ها
+            </div>
+
+            <div class="card-description">
+
+                مجموعه پرامپت‌های آماده برای
+                گردشگری، هتلداری، بازاریابی و فروش.
+
+            </div>
+
+        </div>
+
+        <div class="arrow">
+            ←
+        </div>
+
+    </a>
+
+
+
+    <!-- QUESTION -->
+
+    <a
+        class="card question"
+        href="https://forms.google.com/"
+        target="_blank"
+    >
+
+        <div class="icon">
+            ❓
+        </div>
+
+        <div class="card-content">
+
+            <div class="card-title">
+                ارسال سؤال
+            </div>
+
+            <div class="card-description">
+
+                سؤال خود را درباره موضوعات کارگاه
+                برای مدرس ارسال کنید.
+
+            </div>
+
+        </div>
+
+        <div class="arrow">
+            ←
+        </div>
+
+    </a>
+
+
+
+    <!-- SURVEY -->
+
+    <a
+        class="card survey"
+        href="https://forms.google.com/"
+        target="_blank"
+    >
+
+        <div class="icon">
+            ⭐
+        </div>
+
+        <div class="card-content">
+
+            <div class="card-title">
+                نظرسنجی نیمه اول کارگاه
+            </div>
+
+            <div class="card-description">
+
+                نظر شما درباره محتوا،
+                ارائه و کاربردی بودن مطالب.
+
+            </div>
+
+        </div>
+
+        <div class="arrow">
+            ←
+        </div>
+
+    </a>
+
+</div>
+
+
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+    AI Tourism Workshop
+
+    <br>
+
+    © 2026 Dr. Erfan Ketabchian
+
+</div>
+
+
+</body>
+
+</html>
