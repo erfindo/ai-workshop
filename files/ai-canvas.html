@@ -1,1 +1,22 @@
-
+<!DOCTYPE html>
+<html lang="fa" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>بوم کاربرد AI</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial;background:#f5f7fb;color:#202124}.wrap{max-width:850px;margin:auto;padding:25px 15px 50px}.head{text-align:center;margin-bottom:20px}.head h1{font-size:25px}.head p{color:#667085;line-height:1.9}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.box{background:#fff;border:1px solid #e1e5ea;border-radius:16px;padding:17px;box-shadow:0 4px 14px #00000008}.box h2{font-size:16px;margin:0 0 9px}.box p{font-size:12px;color:#667085;line-height:1.8}.box textarea{width:100%;min-height:120px;border:1px solid #d8dde5;border-radius:10px;padding:10px;font:14px Tahoma;resize:vertical}.wide{grid-column:1/-1}.btns{display:flex;gap:10px;justify-content:center;margin-top:18px;flex-wrap:wrap}button{border:0;border-radius:10px;padding:12px 20px;font:14px Tahoma;cursor:pointer;background:#4285f4;color:white}button.secondary{background:#fff;color:#344054;border:1px solid #d0d5dd}@media(max-width:650px){.grid{grid-template-columns:1fr}.wide{grid-column:auto}}
+</style></head><body><div class="wrap">
+<div class="head"><h1>📋 بوم کاربرد هوش مصنوعی در گردشگری</h1><p>مسئله واقعی خود را انتخاب کنید و آن را به یک کاربرد قابل اجرای AI تبدیل کنید.</p></div>
+<div class="grid">
+<div class="box"><h2>۱. مسئله یا فرصت کسب‌وکار</h2><p>مهم‌ترین چالش یا فرصت چیست؟</p><textarea id="q1"></textarea></div>
+<div class="box"><h2>۲. فرایند فعلی</h2><p>این کار اکنون چگونه انجام می‌شود؟</p><textarea id="q2"></textarea></div>
+<div class="box"><h2>۳. کاربرد پیشنهادی AI</h2><p>AI دقیقاً در کدام بخش وارد شود؟</p><textarea id="q3"></textarea></div>
+<div class="box"><h2>۴. داده‌های مورد نیاز</h2><p>چه داده‌هایی در اختیار دارید یا لازم است جمع‌آوری شوند؟</p><textarea id="q4"></textarea></div>
+<div class="box"><h2>۵. خروجی مورد انتظار</h2><p>AI باید چه چیزی تولید یا انجام دهد؟</p><textarea id="q5"></textarea></div>
+<div class="box"><h2>۶. ارزش کسب‌وکاری</h2><p>کاهش هزینه، افزایش فروش، رضایت یا بهره‌وری؟</p><textarea id="q6"></textarea></div>
+<div class="box"><h2>۷. ریسک‌ها و ملاحظات</h2><p>حریم خصوصی، خطا، سوگیری یا نیاز به تأیید انسانی؟</p><textarea id="q7"></textarea></div>
+<div class="box"><h2>۸. MVP هفت تا چهارده روزه</h2><p>کوچک‌ترین نسخه قابل آزمایش چیست؟</p><textarea id="q8"></textarea></div>
+<div class="box wide"><h2>🎯 جمع‌بندی نهایی</h2><p>اگر فقط یک کاربرد AI را انتخاب کنم، چیست و اولین قدم من چیست؟</p><textarea id="q9" style="min-height:150px"></textarea></div>
+</div>
+<div class="btns"><button onclick="downloadText()">دانلود پاسخ‌های من</button><button class="secondary" onclick="window.print()">چاپ / ذخیره PDF</button></div>
+</div>
+<script>
+function downloadText(){let labels=['۱. مسئله یا فرصت','۲. فرایند فعلی','۳. کاربرد پیشنهادی AI','۴. داده‌های مورد نیاز','۵. خروجی مورد انتظار','۶. ارزش کسب‌وکاری','۷. ریسک‌ها و ملاحظات','۸. MVP','جمع‌بندی'];let s='بوم کاربرد هوش مصنوعی در گردشگری\\nمدرس: دکتر عرفان کتابچیان\\n\\n';labels.forEach((x,i)=>s+=x+'\\n'+document.getElementById('q'+(i+1)).value+'\\n\\n');let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([s],{type:'text/plain;charset=utf-8'}));a.download='AI-Tourism-Canvas.txt';a.click();URL.revokeObjectURL(a.href)}
+</script></body></html>
